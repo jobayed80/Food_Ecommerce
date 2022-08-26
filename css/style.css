@@ -70,7 +70,14 @@ li {
     width: 100%;
     z-index: 999;
 }
-
+.main_menu .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+.main_menu .navbar-brand{
+    font-size: 25px;
+    color: #dfd7d7;
+    font-weight: 800;
+}
 .main_menu ul li a{
     color: #f1f1f1;
     font-size: 14px;
@@ -103,49 +110,35 @@ li {
 .main_menu ul li a:hover:after{
     width: 100%;
 }
+.main_menu .nav-right{
+    display: flex;
+    gap: 30px; 
+}
+.main_menu .nav-right p{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 40px;
 
-/* .main_menu .navbar-brand{
-    width: 245px;
-    height: 70px;
-    background: #323232;
-    text-align:center;
-    line-height: 70px;
-    transform: skewX(-35deg);
-    -webkit-transform: skewX(-35deg);
-    -moz-transform: skewX(-35deg);
-    -ms-transform: skewX(-35deg);
-    -o-transform: skewX(-35deg);
-    position: relative;
+}
+.main_menu .nav-right p i{
+    font-size: 10px;
+    padding: 0 5px;
+   
+    
+}
+.main_menu .nav-right .nav-right-text{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #e23e38;
+    color: #dfd7d7;
+    transition: all linear .4s;
+    text-align: center;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
 }
 
-
-.main_menu .navbar-brand img{
-    transform: skewX(35deg);
-    -webkit-transform: skewX(35deg);
-    -moz-transform: skewX(35deg);
-    -ms-transform: skewX(35deg);
-    -o-transform: skewX(35deg);
-}
-
-.main_menu .navbar-brand:after{
-    position: absolute;
-    content: '';
-    right: 0;
-    top: 0;
-    width: 5px;
-    height: 70px;
-    background: #000;
-}
-
-.main_menu .navbar-brand:before{
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    width: 5px;
-    height: 70px;
-    background: #000;
-} */
 /* ===============================================
                 Menu part end
 ================================================*/
@@ -174,134 +167,6 @@ li {
     background: #e23e38;
     color: #D3D2D2;
 }
-/*
-.banner-text h2{
-    font-size: 26px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
-}
-.banner-text h1{
-    color: var(--hover);
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 45px;
-    padding: 15px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.banner-text p{
-    font-size: 14px;
-    padding-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.banner-text .btn-join{
-    font-family: 'Times New Roman', Times, serif;
-    padding: 5px 20px;
-    background: var(--hover);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    margin-right: 20px;
-}
-
-.banner-text .btn-view{
-    font-family: 'Times New Roman', Times, serif;
-    padding: 5px 20px;
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-   
-}
-
-.banner-text h2{
-    position: relative;
-}
-.banner-text h2:after{
-    position: absolute;
-    content: '';
-    top: 50%;
-    right: 0;
-    width: 100px;
-    height: 5px;
-    background: var(--hover);
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    clip-path: polygon(0 0, 100% 0%, 100% 99%, 5% 100%);
-
-}
-.banner-text h2::before{
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: 0;
-    width: 143px;
-    height: 5px;
-    background: var(--hover);
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
-
-}
-
-
-.banner-text h1{
-    position: relative;
-}
-.banner-text h1:after{
-    position: absolute;
-    content: '';
-    top: -16px;
-    right: 0;
-    width: 5px;
-    height: 181px;
-    background: var(--hover);
-    
-}
-.banner-text h1::before {
-    position: absolute;
-    content: '';
-    top: -16px;
-    left: 0;
-    width: 5px;
-    height: 181px;
-    background: var(--hover);
-}
-
-.banner-text p{
-    position: relative;
-}
-.banner-text p:after{
-    position: absolute;
-    content: '';
-    bottom: -18px;
-    right: 0;
-    width: 47px;
-    height: 5px;
-    background: var(--hover);
-    clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0 100%);
-
-}
-.banner-text p::before{
-    position: absolute;
-    content: '';
-    bottom: -18px;
-    left: 0;
-    width: 74px;
-    height: 5px;
-    background: var(--hover);
-    clip-path: polygon(0 0, 100% 0%, 97% 100%, 0 100%);
-
-}*/
 
 #banner .slick-dots{
     display: flex;
@@ -371,42 +236,6 @@ li {
     max-width: 100%;
 }
 
-/* #about{
-    padding: 80px 0;
-}
-.about-video{
-    position: relative;
-}
-.about-video .overlay{
-    position: absolute;
-    left:0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-}
-.about-video .overlay a{
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    background: var(--hover);
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 20px;
-    color: #000;
-    transform: translate(-50% , -50%);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-transform: translate(-50% , -50%);
-    -moz-transform: translate(-50% , -50%);
-    -ms-transform: translate(-50% , -50%);
-    -o-transform: translate(-50% , -50%);
-} */
 
 
 
@@ -547,6 +376,7 @@ li {
     padding-left: 0;
     padding-right: 0;
 }
+
 #contact .contact-us{
     margin-bottom: 30px;
 }
@@ -554,6 +384,10 @@ li {
 .contact-form .full-name{
     margin-right: 5px;
     width: 49%;
+}
+.google-map{
+    width: 80%;
+  
 }
 .contact-form .email{
     width: 49%;
@@ -700,25 +534,3 @@ li {
 /* ===============================================
                 Menu part end
 ================================================*/
-
-
-
-
-
-@media screen and (max-width: 760px) {
-    body {
-      background-color: lightgreen;
-    }
-    .container{
-        width: 768px;
-    }
-  }
-
-  @media screen and (max-width: 576px) {
-    body {
-      background-color:  aqua;
-    }
-    .container{
-        width: 768px;
-    }
-  }
